@@ -75,7 +75,6 @@ h1 {
     width: 463px;
     left: 729px;
     top: 649px;
-    border-radius: 0px;
     background-color: rgba(255, 255, 255, .2);
     border-radius: 50px;
     backdrop-filter: blur(15px);
@@ -188,4 +187,48 @@ h3 {
     text-align: center;
     position: absolute;
     transform: translate(194px, 285px);
+}
+
+/* footer */
+footer {
+    width: 100%;
+    margin-inline: auto;
+    background-color: #262626;
+    padding: 60px 629px;
+    margin-top: 245px;
+}
+
+.footer_text1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+span {
+    color: #DCB47A;
+}
+
+.footer_text2 {
+    color: #FFFFFF;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    margin: 48px auto;
+
+}
+
+.footer_text3 {
+    width: 200px;
+    background-color: #DCB47A;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    padding: 22px 60px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 50px;
+    margin-inline: auto;
 }
