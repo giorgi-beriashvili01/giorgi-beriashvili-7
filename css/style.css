@@ -11,7 +11,8 @@ header {
     width: inherit;
     background-color: #262626;
     padding: 45px 320px;
-
+    position: fixed;
+    top: 0;
 }
 
 nav {
@@ -44,6 +45,7 @@ nav {
     height: 1080px;
     margin-inline: auto;
     position: relative;
+    margin-top: 123px;
 
 }
 
