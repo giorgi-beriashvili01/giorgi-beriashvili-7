@@ -1,0 +1,44 @@
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin-inline: auto;
+
+}
+
+header {
+    width: 100%;
+    background-color: #262626;
+    max-width: inherit;
+    padding: 45px 320px;
+
+}
+
+nav {
+display: inline-block;
+
+
+}
+
+
+
+.header_text {
+    display: inline-flex;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 68px;
+
+
+}
+
+.fa-bag-shopping {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-left: 638px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
