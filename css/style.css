@@ -3,7 +3,6 @@
     max-width: 1920px;
     width: 100%;
     margin-inline: auto;
-
 }
 
 header {
@@ -11,41 +10,58 @@ header {
     width: inherit;
     background-color: #262626;
     padding: 45px 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-nav {
-    display: inline-block;
+ul {
+    display: flex;
+    gap: 68px;
 }
 
-
-
-.header_text {
-    display: inline-flex;
-    color: #FFFFFF;
+li a {
     font-size: 24px;
+    color: #FFFFFF;
     font-weight: 600;
-    line-height: 28px;
-    text-align: center;
-    margin-right: 68px;
 }
+
 
 .fa-bag-shopping {
     color: #FFFFFF;
     font-size: 30px;
-    margin-left: 638px;
-    text-align: center;
-    display: inline-block;
+
 }
 
 /* section1 */
+
 .section1 {
-    width: 1920px;
+    width: 100%;
     height: 1080px;
     margin-inline: auto;
     position: relative;
-    margin-top: 123px;
+    top: 111px;
+    z-index: -1;
+}
+
+.section1_img {
+    width: 100%;
+    height: 100%;
+}
+
+.texts_box {
+    width: 70%;
+    position: absolute;
+    top: 242px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -55,33 +71,29 @@ h1 {
     line-height: 96px;
     text-align: center;
     color: #FFFFFF;
-    position: absolute;
-    width: 1128px;
-    transform: translate(396px, 242px);
 }
 
 .section1_text {
+    width: 45%;
     font-size: 24px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 150%;
     text-align: center;
     color: #FFFFFF;
-    position: absolute;
-    width: 583px;
-    transform: translate(668px, 565px);
+    margin: 161px 0 23px 0;
+
 }
 
 .search {
-    position: absolute;
-    height: 71px;
     width: 463px;
-    left: 729px;
-    top: 649px;
+    height: 71px;
     background-color: rgba(255, 255, 255, .2);
+    border: 1px solid #FFFFFF;
     border-radius: 50px;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
+    padding: 0 9px 0 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -90,25 +102,20 @@ h1 {
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
-    display: inline-block;
-    vertical-align: middle;
+
 
 }
 
 
 .fa-magnifying-glass {
-    font-size: 30px;
+    font-size: 25px;
     color: #FFFFFF;
-    vertical-align: middle;
     background-color: #525A55;
-    padding: 10px;
     border-radius: 50px;
+    padding: 13px;
 }
 
-.section1_img {
-    width: 100%;
-    height: 100%;
-}
+
 
 /* middle section */
 
@@ -139,15 +146,18 @@ h2 {
     border: 2px solid #DCB47A
 }
 
+.title_cart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 17px 0;
+}
+
 .card img {
     width: 100%;
 }
 
-.card_text {
-    display: inline-block;
-    margin: 54px 185px 17px 0;
-
-}
 
 /* bottom section */
 
@@ -155,6 +165,7 @@ h2 {
     width: 70%;
     margin-inline: auto;
     margin-top: 245px;
+
 
 
 }
@@ -171,40 +182,68 @@ h3 {
 .bottom_imgs {
     display: flex;
     justify-content: space-between;
+
 }
 
-.bottom_rightimg {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.left_img {
+    width: 55%;
+    height: 645px;
+    position: relative;
+    z-index: -1;
 }
 
-.bottom_img1_text {
+.left_img1 {
+    width: 100%;
+    height: 100%;
+}
+
+.left_img1_text {
     color: #DCB47A;
     font-size: 64px;
     font-weight: 600;
     line-height: 75px;
     letter-spacing: 0em;
-    /* text-align: left; */
     text-align: center;
     position: absolute;
-    transform: translate(194px, 285px);
+    width: 56%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
 }
+
+
+
+.right_img {
+    width: 43%;
+    height: 645px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.right_imgs {
+    height: 48%;
+}
+
+
 
 /* footer */
 footer {
     width: 100%;
-    margin-inline: auto;
     background-color: #262626;
-    padding: 60px 629px;
+    padding: 60px 0;
     margin-top: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer_text1 {
     font-size: 60px;
     font-weight: 600;
     line-height: 70px;
-    text-align: center;
     color: #FFFFFF;
 }
 
@@ -217,20 +256,21 @@ span {
     font-size: 21px;
     font-weight: 400;
     line-height: 27px;
-    text-align: center;
-    margin: 48px auto;
+    margin: 48px 0;
 
 }
 
+button{
+    background-color: #DCB47A;
+    border-radius: 50px;
+    border: 0;
+}
 .footer_text3 {
     width: 200px;
-    background-color: #DCB47A;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
     padding: 22px 60px;
-    text-align: center;
     color: #FFFFFF;
-    border-radius: 50px;
-    margin-inline: auto;
+
 }
